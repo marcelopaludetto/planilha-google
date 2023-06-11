@@ -38,4 +38,9 @@ body {
   tr:hover {
     background-color: #ddd;
   }
-  
+
+  .grafico{ 
+    margin: auto;
+    width: 50%; 
+    height: 15em;
+  }
