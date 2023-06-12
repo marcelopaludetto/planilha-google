@@ -12,11 +12,11 @@ body {
   div {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 100%;
   }
   
   table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin-bottom: 1.5rem;
   }
