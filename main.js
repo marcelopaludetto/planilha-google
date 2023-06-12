@@ -7,6 +7,8 @@ lerArquivoCSV(
     console.log(nomes);
 
     var thead = document.querySelector(".tabela-titulo");
+    var tbody = document.querySelector("#minha-tabela");
+
     for (var k = 0; k < titulos[0].length; k++) {
       var titulo = document.createElement("th");
       titulo.textContent = titulos[0][k];
@@ -72,10 +74,9 @@ async function lerArquivoCSV(arquivo) {
 
 var tagH2 = document.querySelector(".titulo-tabela");
 tagH2.innerHTML = "Notas da Turma da 3ª série";
-var tbody = document.querySelector("#minha-tabela");
 
-function grafico(listaNome, listaNotas, listaNotas2,listaNotas3) {
-  let ctx = document.getElementById("myChart").getContext("2d");
+function grafico(listaNome, listaNotas, listaNotas2, listaNotas3) {
+  let ctx = document.getElementById("grafico-principal").getContext("2d");
   let chart = new Chart(ctx, {
     type: "bar", // ou 'line' para um gráfico de linha
     data: {
@@ -101,7 +102,7 @@ function grafico(listaNome, listaNotas, listaNotas2,listaNotas3) {
           backgroundColor: "rgba(128, 0, 128, 0.2)",
           borderColor: "rgba(128, 0, 128)",
           borderWidth: 1,
-        }
+        },
       ],
     },
     options: {
